@@ -1,0 +1,74 @@
+{
+	"name": "git-info-crawler",
+	"version": "0.0.1",
+	"description": "Crawl info from one git account",
+	"homepage": "",
+	"author": {
+		"name": "oGsLegolas",
+		"email": "1145234011@qq.com",
+		"url": "oGsLP.github.io"
+	},
+	"files": [
+		"lib",
+		"test",
+		"index.js"
+	],
+	"main": "index.js",
+	"keywords": [
+		"crawler",
+		"git"
+	],
+	"devDependencies": {
+		"coveralls": "^3.0.2",
+		"eslint": "^5.9.0",
+		"prettier": "^1.15.2",
+		"husky": "^1.2.0",
+		"lint-staged": "^8.1.0",
+		"eslint-config-prettier": "^3.3.0",
+		"eslint-plugin-prettier": "^3.0.0",
+		"eslint-config-xo": "^0.25.0",
+		"jest": "^23.5.0"
+	},
+	"engines": {
+		"npm": ">= 4.0.0"
+	},
+	"lint-staged": {
+		"*.js": [
+			"eslint --fix",
+			"git add"
+		],
+		"*.json": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"eslintConfig": {
+		"extends": [
+			"xo",
+			"prettier"
+		],
+		"env": {
+			"jest": true,
+			"node": true
+		},
+		"rules": {
+			"prettier/prettier": "error"
+		},
+		"plugins": [
+			"prettier"
+		]
+	},
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "jest"
+	},
+	"repository": "oGsLP/git-info-crawler",
+	"jest": {
+		"testEnvironment": "node"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"axios": "^0.18.0",
+		"cheerio": "^1.0.0-rc.3"
+	}
+}
