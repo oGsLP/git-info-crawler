@@ -1,13 +1,20 @@
-const crawler = require("./../index");
+// Const crawler = require("./../index");
+
+// const crawlRepos = require("./../lib/crawler/reposCrawler");
 //
+// crawlRepos("NJUSSJ").then(data => {
+// 	console.log(data);
+// });
 
-// crawler.crawl("oGsLP");
+// const crawler = require("./../lib/crawler");
+// const printer = require("./../lib/printer");
+// crawler.crawl("oGsLP").then(data => {
+// 	printer.print(data);
+// });
 
+// const crawler = require("./../index");
 // crawler.crawlRepos("oGsLP");
 
-const crawlRepos = require("./../lib/crawler/reposCrawler");
 
-console.log(crawlRepos("oGsLP"))
-crawlRepos("oGsLP").then(data => {
-	console.log(data);
-});
+const userCrawler = require("./../lib/crawler/userCrawler");
+userCrawler("hanxinhu").then(data => console.log(data));

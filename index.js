@@ -11,5 +11,10 @@ module.exports = {
 		crawler.crawlRepos(username).then(data => {
 			printer.printRepos(data.repos);
 		});
+	},
+	crawlUser: function(username) {
+		crawler.crawlUser(username).then(data => {
+			printer.printUser(data);
+		});
 	}
 };
