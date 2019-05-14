@@ -15,5 +15,8 @@
 // const crawler = require("./../index");
 // crawler.crawlRepos("oGsLP");
 
-const userCrawler = require("./lib/crawler/userCrawler");
-userCrawler("NJUSSJ").then(data => console.log(data));
+// const userCrawler = require("./lib/crawler/userCrawler");
+// userCrawler("NJUSSJ").then(data => console.log(data));
+
+const emojiCrawler = require("./lib/crawler/emojiCrawler");
+emojiCrawler().then(res=>console.log(res));
