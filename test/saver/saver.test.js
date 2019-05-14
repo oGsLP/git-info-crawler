@@ -3,6 +3,6 @@ const saver = require("./../../lib/saver");
 
 describe("#saver", () => {
 	it("has a test", () => {
-		assert(true, asver);
+		assert(true, saver);
 	});
 });

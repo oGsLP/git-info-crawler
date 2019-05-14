@@ -15,6 +15,5 @@
 // const crawler = require("./../index");
 // crawler.crawlRepos("oGsLP");
 
-
-const userCrawler = require("./../lib/crawler/userCrawler");
-userCrawler("hanxinhu").then(data => console.log(data));
+const userCrawler = require("./lib/crawler/userCrawler");
+userCrawler("NJUSSJ").then(data => console.log(data));

@@ -64,9 +64,6 @@
 		"test": "jest"
 	},
 	"repository": "oGsLP/git-info-crawler",
-	"jest": {
-		"testEnvironment": "node"
-	},
 	"license": "MIT",
 	"dependencies": {
 		"axios": "^0.18.0",
