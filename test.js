@@ -22,6 +22,3 @@ const emojiCrawler = require("./lib/crawler/emojiCrawler");
 
 const emojiPrinter = require("./lib/printer/emojiPrinter");
 emojiCrawler().then(res => emojiPrinter(res));
-
-const md = require("./lib/util/mkdirUtil");
-
