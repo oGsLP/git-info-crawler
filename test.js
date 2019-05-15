@@ -19,4 +19,7 @@
 // userCrawler("NJUSSJ").then(data => console.log(data));
 
 const emojiCrawler = require("./lib/crawler/emojiCrawler");
-emojiCrawler().then(res=>console.log(res));
+
+const emojiPrinter = require("./lib/printer/emojiPrinter");
+emojiCrawler().then(res => emojiPrinter(res));
+
