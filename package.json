@@ -62,7 +62,8 @@
 	"scripts": {
 		"pretest": "eslint .",
 		"test": "jest",
-		"cov": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "coverage": "jest --coverage",
+		"coveralls": "jest --coverage && cat coverage/lcov.info | coveralls && rm -rf coverage"
 	},
 	"repository": "oGsLP/git-info-crawler",
 	"license": "MIT",
