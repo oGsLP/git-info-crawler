@@ -2,7 +2,7 @@ const assert = require("assert");
 const gitInfoCrawler = require("../index.js");
 
 describe("gitInfoCrawler", () => {
-	it("has a test", () => {
-		assert(true, gitInfoCrawler);
-	});
+  it("has a test", () => {
+    assert(true, gitInfoCrawler);
+  });
 });
