@@ -21,8 +21,8 @@ MIT © [oGsLegolas](oGsLP.github.io)
 
 [npm-image]: https://badge.fury.io/js/git-info-crawler.svg
 [npm-url]: https://npmjs.org/package/git-info-crawler
-[travis-image]: https://travis-ci.org/oGsLP/git-info-crawler.svg?branch=master
-[travis-url]: https://travis-ci.org/oGsLP/git-info-crawler
+[travis-image]: https://travis-ci.com/oGsLP/git-info-crawler.svg?branch=master
+[travis-url]: https://travis-ci.com/oGsLP/git-info-crawler
 [daviddm-image]: https://david-dm.org/oGsLP/git-info-crawler.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/oGsLP/git-info-crawler
 [coveralls-image]: https://coveralls.io/repos/oGsLP/git-info-crawler/badge.svg

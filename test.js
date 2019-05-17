@@ -1,6 +1,6 @@
 // Const crawler = require("./../index");
 
-// const crawlRepos = require("./../lib/crawler/reposCrawler");
+// const crawlRepos = require("./lib/crawler/reposCrawler");
 //
 // crawlRepos("NJUSSJ").then(data => {
 // 	console.log(data);
@@ -18,7 +18,13 @@
 // const userCrawler = require("./lib/crawler/userCrawler");
 // userCrawler("NJUSSJ").then(data => console.log(data));
 //
-const emojiCrawler = require("./lib/crawler/emojiCrawler");
+// const emojiCrawler = require("./lib/crawler/emojiCrawler");
+//
+// const emojiPrinter = require("./lib/printer/emojiPrinter");
+// emojiCrawler().then(res => emojiPrinter(res));
+//
+// const dbUtil = require("./lib/util/MongoDBUtil");
+// dbUtil.init();
 
-const emojiPrinter = require("./lib/printer/emojiPrinter");
-emojiCrawler().then(res => emojiPrinter(res));
+const crawlFollow = require("./lib/crawler/followCrawler");
+crawlFollow("oGsLP").then(res => console.log(res));
