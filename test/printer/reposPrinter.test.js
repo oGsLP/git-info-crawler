@@ -3,6 +3,6 @@ const reposPrinter = require("./../../lib/printer/reposPrinter");
 
 describe("#reposPrinter", () => {
   it("has a test", () => {
-    assert(true, reposPrinter);
+    assert(reposPrinter);
   });
 });

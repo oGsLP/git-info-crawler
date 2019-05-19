@@ -1,76 +1,76 @@
 {
-	"name": "git-info-crawler",
-	"version": "0.0.1",
-	"description": "Crawl info from one git account",
-	"homepage": "",
-	"author": {
-		"name": "oGsLegolas",
-		"email": "1145234011@qq.com",
-		"url": "oGsLP.github.io"
-	},
-	"files": [
-		"lib",
-		"test",
-		"index.js"
-	],
-	"main": "index.js",
-	"keywords": [
-		"crawler",
-		"git"
-	],
-	"devDependencies": {
-		"coveralls": "^3.0.2",
-		"eslint": "^5.9.0",
-		"eslint-config-prettier": "^3.3.0",
-		"eslint-config-xo": "^0.25.0",
-		"eslint-plugin-prettier": "^3.0.0",
-		"husky": "^1.2.0",
-		"jest": "^23.5.0",
-		"lint-staged": "^8.1.0",
-		"prettier": "^1.15.2"
-	},
-	"engines": {
-		"npm": ">= 4.0.0"
-	},
-	"lint-staged": {
-		"*.js": [
-			"eslint --fix",
-			"git add"
-		],
-		"*.json": [
-			"prettier --write",
-			"git add"
-		]
-	},
-	"eslintConfig": {
-		"extends": [
-			"xo",
-			"prettier"
-		],
-		"env": {
-			"jest": true,
-			"node": true
-		},
-		"rules": {
-			"prettier/prettier": "error",
-			"camelcase": "off"
-		},
-		"plugins": [
-			"prettier"
-		]
-	},
-	"scripts": {
-		"pretest": "eslint .",
-		"test": "jest",
+  "name": "git-info-crawler",
+  "version": "0.0.1",
+  "description": "Crawl info from one git account",
+  "homepage": "",
+  "author": {
+    "name": "oGsLegolas",
+    "email": "1145234011@qq.com",
+    "url": "oGsLP.github.io"
+  },
+  "files": [
+    "lib",
+    "test",
+    "index.js"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "crawler",
+    "git"
+  ],
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-xo": "^0.25.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.2.0",
+    "jest": "^23.5.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.2"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": "error",
+      "camelcase": "off"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest",
     "coverage": "jest --coverage",
-		"coveralls": "jest --coverage && cat coverage/lcov.info | coveralls && rm -rf coverage"
-	},
-	"repository": "oGsLP/git-info-crawler",
-	"license": "MIT",
-	"dependencies": {
-		"axios": "^0.18.0",
-		"chalk": "^2.4.2",
-		"cheerio": "^1.0.0-rc.3",
-		"mongodb": "^3.2.4"
-	}
+    "coveralls": "jest --coverage && cat coverage/lcov.info | coveralls && rm -rf coverage"
+  },
+  "repository": "oGsLP/git-info-crawler",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.3",
+    "mongodb": "^3.2.4"
+  }
 }

@@ -3,6 +3,6 @@ const printer = require("./../../lib/printer");
 
 describe("#printer", () => {
   it("has a test", () => {
-    assert(true, printer);
+    assert(printer);
   });
 });

@@ -3,10 +3,10 @@ const crawlRepos = require("./../../lib/crawler/reposCrawler");
 
 describe("#reposCrawler", () => {
   it("has a test", () => {
-    assert(true, true);
+    assert(crawlRepos);
   });
   it("test oGsLP", () => {
-    crawlRepos("oGsLP").then(data => {
+    return crawlRepos("oGsLP").then(data => {
       assert.strictEqual(data.username, "oGsLP");
       assert.deepStrictEqual(data.repos.pop(), {
         repoName: "HotelSystem",
@@ -15,5 +15,5 @@ describe("#reposCrawler", () => {
         updated: "Nov 20, 2016"
       });
     });
-  });
+  }, 10000);
 });
