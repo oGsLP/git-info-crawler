@@ -27,4 +27,5 @@
 // dbUtil.init();
 
 const crawlFollow = require("./lib/crawler/followCrawler");
-crawlFollow("oGsLP").then(res => console.log(res));
+const printFollow = require("./lib/printer/followPrinter");
+crawlFollow("oGsLP").then(res => printFollow(res));

@@ -3,6 +3,6 @@ const gitInfoCrawler = require("../index.js");
 
 describe("gitInfoCrawler", () => {
   it("has a test", () => {
-    assert(true, gitInfoCrawler);
+    assert(gitInfoCrawler);
   });
 });
