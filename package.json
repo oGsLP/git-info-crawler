@@ -1,6 +1,6 @@
 {
   "name": "git-info-crawler",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Crawl info from one git account",
   "homepage": "",
   "author": {

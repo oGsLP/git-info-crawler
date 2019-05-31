@@ -15,8 +15,8 @@
 // const crawler = require("./../index");
 // crawler.crawlRepos("oGsLP");
 
-// const userCrawler = require("./lib/crawler/userCrawler");
-// userCrawler("NJUSSJ").then(data => console.log(data));
+const userCrawler = require("./lib/crawler/userCrawler");
+userCrawler("NJUSSJ").then(data => console.log(data));
 //
 // const emojiCrawler = require("./lib/crawler/emojiCrawler");
 //
@@ -26,6 +26,6 @@
 // const dbUtil = require("./lib/util/MongoDBUtil");
 // dbUtil.init();
 
-const crawlFollow = require("./lib/crawler/followCrawler");
-const printFollow = require("./lib/printer/followPrinter");
-crawlFollow("oGsLP").then(res => printFollow(res));
+// const crawlFollow = require("./lib/crawler/followCrawler");
+// const printFollow = require("./lib/printer/followPrinter");
+// crawlFollow("oGsLP").then(res => printFollow(res));

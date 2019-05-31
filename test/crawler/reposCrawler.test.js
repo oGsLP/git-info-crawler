@@ -9,10 +9,10 @@ describe("#reposCrawler", () => {
     return crawlRepos("oGsLP").then(data => {
       assert.strictEqual(data.username, "oGsLP");
       assert.deepStrictEqual(data.repos.pop(), {
-        repoName: "HotelSystem",
-        desc: "软工第二次大作业:酒店管理系统",
+        repoName: "Software-Engineering-Team-Work2",
+        desc: "",
         lang: "Java",
-        updated: "Nov 20, 2016"
+        updated: "Dec 21, 2017"
       });
     });
   }, 10000);
