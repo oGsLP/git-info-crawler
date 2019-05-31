@@ -12,7 +12,7 @@ $ npm install --save git-info-crawler
 ```js
 const gitInfoCrawler = require('git-info-crawler');
 
-gitInfoCrawler('Rainbow');
+gitInfoCrawler('oGsLP');
 ```
 ## License
 
